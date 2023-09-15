@@ -1,0 +1,334 @@
+/* Reset default padding and margin for the whole page */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #a52c2c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style the company name */
+.company-name h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Freehand', cursive;
+}
+
+/* Style the hamburger menu icon */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Style the navigation links */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+.nav-links li a:hover{
+    text-decoration: underline;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Media query for responsive design */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .hamburger-menu:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #16294a;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-links.active li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+.bilds{
+    background-image: url(bilder/kskbak.jpg);
+    background-size: cover;
+    width: cover;
+    height: 400px;
+}
+hr{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(245, 212, 212);
+}
+.containero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #16294a;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hrr{
+    height: 15px;
+    background-color: #a52c2c;
+}
+.box1 img{
+    width: 200px;
+    border-radius: 140px;
+    
+    
+}
+.box1{
+    text-align: center;
+}
+.box1 h2{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: 'Freehand', cursive;
+    color: #ffffff;
+}
+.box2{
+    margin: 10px;
+    
+
+}
+.box2 p{
+    color: #ffffff;
+    font-weight: bold;
+}
+.box2 h2{
+    font-family: 'Freehand', cursive;
+    color: #ffffff;
+}
+
+.box3 h2{
+    font-family: 'Freehand', cursive;
+    color: #ffffff;
+
+}
+.box3{
+    margin: 10px;
+    width: 20%;
+    text-align: center;
+
+}
+.box2 h4{
+    font-family: 'Freehand', cursive;
+    color: #ffffff;
+    font-size: 25px;
+}
+.Meny h2{
+    color: #ffffff;
+
+}
+body{
+    background-color: #0f1c32;
+}
+.menyy {
+    position: relative;
+    width: calc(100% - 30px); /* Adjust the width by subtracting twice the margin value */
+    height: 180vh; /* Adjust the height as needed */
+    margin: 40px auto; /* Add 40px margin to the top, right, and left sides */
+    border: 3px solid white;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+    background-color: #16294a;
+    max-width: 1000px;
+  }
+  .menyy1 {
+    position: relative;
+    width: calc(100% - 30px); /* Adjust the width by subtracting twice the margin value */
+    height: 12vh; /* Adjust the height as needed */
+    margin: 40px auto; /* Add 40px margin to the top, right, and left sides */
+    
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+    
+    max-width: 1000px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed */
+    margin: 5px;
+    height: 1100px; /* Adjust the height as needed */
+    outline-color: whitesmoke;
+    outline-width: 1px;
+    
+  }
+
+  
+  @media only screen and (max-width: 768px) {
+    .box {
+      flex: 0 0 100%; /* Make the boxes stack vertically on smaller screens */
+      margin: 5px 0;
+    }
+  }
+  h1{
+    font-family:'Freehand', cursive;
+    color: white;
+    font-size: 40px;
+    margin-left: 30px;
+  }
+  hr.hr1{
+    background-color: whitesmoke;
+    height: 6px;
+  }
+  .bild{
+    width: 200px;
+    border-radius: 100px;
+    float: right;
+  }
+  h2{
+    margin-top: 15px;
+    font-family:'Freehand', cursive;
+    color: white;
+    font-size: 40px;
+    margin-left: 30px;
+    float: left;
+  }
+  h3{
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 16px;
+    float: right;
+    
+  }
+  .meny hr{
+    background-color: whitesmoke;
+    height: 1px;
+}
+h1.menytitel1{
+    font-family: 'Delicious Handrawn', cursive;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 20px;
+    
+    
+    
+}
+h1.menytitel2{
+    font-family: 'Delicious Handrawn', cursive;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    
+}
+h1.menytitel3{
+    font-family: 'Delicious Handrawn', cursive;
+    font-weight: lighter;
+    color: rgb(225, 103, 98);
+    
+    
+}
+.menyitem{
+    font-size: 15px;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.menyitemOvan{
+    font-size: 15px;
+    color: whitesmoke;
+    
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.blå{
+    height: 20px;
+    background-color: #a52c2c;
+}
+.vit{
+    height: 20px;
+    background-color: #fff;
+}
+#box1.box{
+    height: 500px;
+}
+.menyy{
+    height: 650px;
+}
+.container2{
+    height: 400px;
+}
+.menyy2{
+    height: 550px;
+    
+}
+.menyh1{
+    font-size: 60px;
+    text-align: left;
+    
+}
+
+
+.box2{
+   text-align: center;
+   
+}
+
+#ram{
+    border: 3px solid white;
+}
+.menyh2{
+    text-align: center;
+}
+#ram p{
+    margin: 10px;
+}
+#ram h2{
+    margin: 10px;
+}
+
+
